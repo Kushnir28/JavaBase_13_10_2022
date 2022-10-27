@@ -21,6 +21,8 @@ public class Main {
         System.out.println("lengthAllAdges = " + 4 * (adgeA + adgeB + adgeD));
         System.out.println();
 
+      //  volumeParallelepiped = 33750; lengthAllAdges = 400.
+
 
         /*За владу в стародавньому Китаї боролися дві династії: Лі та Мінь.
           З кожного боку боролися 3 типи воїнів з такими показниками атаки:
@@ -62,7 +64,7 @@ public class Main {
                 archerMinIndexAttacks + riderMinIndexAttacks));
         System.out.println();
 
-
+      // liGeneralIndexAttacks = 71380; minGeneralIndexAttacks = 72240.
 
 
 
