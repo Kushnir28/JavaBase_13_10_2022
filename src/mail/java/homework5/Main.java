@@ -4,9 +4,6 @@ import java.util.Scanner;
 
 
 
-
-
-
 public class Main {
     public static void Main(String[] args) {
 
@@ -20,14 +17,26 @@ public class Main {
 //        "Перемогла команда" + teamName + "набрала" + result + "очків"
 
         Scanner sc = new Scanner(System.in);
+        String teamName1 = sc.nextLine();
+        System.out.println("Team # 1: " + teamName1);
+        int dreamPlayer1 = 22;
+        if (sc.hasNextInt()) {
+            dreamPlayer1 = sc.nextInt();
+            System.out.println(dreamPlayer1);
+        }  else {
+            System.out.println("Wrong data, enter integer data");
+            System.exit(0);
+        }
+        int dreamPlayer2 = 18;
+        if (sc.hasNextInt()) {
+            dreamPlayer2 = sc.nextInt();
+            System.out.println(dreamPlayer2);
+        }  else {
+            System.out.println("Wrong data, enter integer data");
+            System.exit(0);
+        }
 
 
-        String firstTeam = sc.nextLine();
-        System.out.println("Team # 1: " + firstTeam);
-        int firstPlayer = sc.nextInt();
-        System.out.println("1 player frags = " + firstPlayer);
-        int secondPlayer = sc.nextInt();
-        System.out.println("2 player frags = " + secondPlayer);
         int thirdPlayer = sc.nextInt();
         System.out.println("3 player frags = " + thirdPlayer);
         int fourthPlayer = sc.nextInt();
@@ -47,6 +56,21 @@ public class Main {
         System.out.println("4 player frags = " + player4);
         int player5 = sc.nextInt();
         System.out.println("5 player frags = " + player5);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
     }
