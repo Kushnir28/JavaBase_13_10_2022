@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
 
-        //        ввести ім'я першої команди
+ //               ввести ім'я першої команди
 //        ввести кількість фрагів для 5-ти гравців першої команди (тобто має бути 5 змінних)
 //        ввести ім'я другої команди
 //        ввести кількість фрагів для 5-ти гравців другої команди (тобто має бути 5 змінних)
@@ -14,123 +14,121 @@ public class Main {
 //        вивести у консоль:
 //        "Перемогла команда" + teamName + "набрала" + result + "очків"
 
-        Scanner sc = new Scanner(System.in);
+               Scanner sc = new Scanner(System.in);
 
         System.out.println("Enter  team's name # 1 ");
-        String dreamTeam = sc.nextLine();
-        System.out.println("Team's name # 1: " + dreamTeam);
+        String team1 = sc.nextLine();
+        System.out.println("Team's name # 1: " + team1);
 
         System.out.println("Enter quantity frags for 1 player:");
-        int dreamPlayer1 = 22;
+        int team1Player1 = 22;
         if (sc.hasNextInt()) {
-            System.out.println("1 dream's player: " + dreamPlayer1);
+            System.out.println("1 player: " + team1Player1);
         }  else {
             System.out.println("Wrong data, enter integer data");
             System.exit(0);
         }
         sc.nextLine();
         System.out.println("Enter quantity frags for 2 player:");
-        int dreamPlayer2 = 18;
+        int team1Player2 = 18;
         if (sc.hasNextInt()) {
-            System.out.println("2 dream's player: " + dreamPlayer2);
+            System.out.println("2 player: " + team1Player2);
         }  else {
             System.out.println("Wrong data, enter integer data");
             System.exit(0);
         }
         sc.nextLine();
         System.out.println("Enter quantity frags for 3 player:");
-        int dreamPlayer3 = 15;
+        int team1Player3 = 15;
         if (sc.hasNextInt()) {
-            System.out.println("3 dream's player: " + dreamPlayer3);
+            System.out.println("3 dream's player: " + team1Player3);
         } else {
             System.out.println("Wrong data, enter integer data");
             System.exit(0);
         }
         sc.nextLine();
         System.out.println("Enter quantity frags for 4 player:");
-        int dreamPlayer4 = 28;
+        int team1Player4 = 28;
         if (sc.hasNextInt()) {
-            System.out.println("4 dream's player: " + dreamPlayer4);
+            System.out.println("4 player: " + team1Player4);
         } else {
             System.out.println("Wrong data, enter integer data");
             System.exit(0);
         }
         sc.nextLine();
         System.out.println("Enter quantity frags for 5 player:");
-        int dreamPlayer5 = 37;
+        int team1Player5 = 37;
         if (sc.hasNextInt()) {
-            System.out.println("5 dream's player: " + dreamPlayer5);
+            System.out.println("5 player: " + team1Player5);
         } else {
             System.out.println("Wrong data, enter integer data");
             System.exit(0);
         }
         sc.nextLine();
         System.out.println("Enter team's name # 2");
-        String starTeam = sc.nextLine();
-        System.out.println("Team's name # 2: " + starTeam);
+        String team2 = sc.nextLine();
+        System.out.println("Team's name # 2: " + team2);
 
         System.out.println("Enter quantity frags for 1 player:");
-        int starPlayer1 = 41;
+        int team2Player1 = 41;
         if (sc.hasNextInt()) {
-            System.out.println("1 star's player: " + starPlayer1);
+            System.out.println("1 player: " + team2Player1);
         }  else {
             System.out.println("Wrong data, enter integer data");
             System.exit(0);
         }
         sc.nextLine();
         System.out.println("Enter quantity frags for 2 player:");
-        int starPlayer2 = 23;
+        int team2Player2 = 23;
         if (sc.hasNextInt()) {
-            System.out.println("2 star's player: " + starPlayer2);
+            System.out.println("2 player: " + team2Player2);
         }  else {
             System.out.println("Wrong data, enter integer data");
             System.exit(0);
         }
         sc.nextLine();
         System.out.println("Enter quantity frags for 3 player:");
-        int starPlayer3 = 17;
+        int team2Player3 = 17;
         if (sc.hasNextInt()) {
-            System.out.println("3 star's player: " + starPlayer3);
+            System.out.println("3 player: " + team2Player3);
         } else {
             System.out.println("Wrong data, enter integer data");
             System.exit(0);
         }
         sc.nextLine();
         System.out.println("Enter quantity frags for 4 player:");
-        int starPlayer4 = 33;
+        int team2Player4 = 33;
         if (sc.hasNextInt()) {
-            System.out.println("4 star's player: " + starPlayer4);
+            System.out.println("4 player: " + team2Player4);
         } else {
             System.out.println("Wrong data, enter integer data");
             System.exit(0);
         }
         sc.nextLine();
         System.out.println("Enter quantity frags for 5 player:");
-        int starPlayer5 = 39;
+        int team2Player5 = 39;
         if (sc.hasNextInt()) {
-            System.out.println("5 star's player: " + starPlayer5);
+            System.out.println("5 player: " + team2Player5);
         } else {
             System.out.println("Wrong data, enter integer data");
             System.exit(0);
         }
         sc.nextLine();
 
-        int arithmeticMeanDreamTeam = (dreamPlayer1 + dreamPlayer2 + dreamPlayer3 + dreamPlayer4 + dreamPlayer5) / 5;
-        int arithmeticMeanStarTeam = (starPlayer1 + starPlayer2 + starPlayer3 + starPlayer4 + starPlayer5) / 5;
-        int DreamTeam = arithmeticMeanDreamTeam;
-        int StarTeam = arithmeticMeanStarTeam;
+        int arithmeticMeanTeam1 = (team1Player1 + team1Player2 + team1Player3 + team1Player4 + team1Player5) / 5;
+        int arithmeticMeanTeam2 = (team2Player1 + team2Player2 + team2Player3 + team2Player4 + team2Player5) / 5;
 
-        if (DreamTeam > StarTeam) {
-            System.out.println("DreamTeam is win");
-        }  else if (DreamTeam < StarTeam) {
-            System.out.println("StarTeam is win");
-        }  else  (DreamTeam == StarTeam) {
 
-        }
+        if (arithmeticMeanTeam1 > arithmeticMeanTeam2) {
+            System.out.println("Team is win: " + team1 + " scored: " + arithmeticMeanTeam1 + " frags ");
+        }  else if (arithmeticMeanTeam1 < arithmeticMeanTeam2) {
+            System.out.println("Team is win: " + team2 + " scored: " + arithmeticMeanTeam2 + " frags ");
+        }  else System.out.println(team1 + " scored: " + arithmeticMeanTeam1 + " and " +
+                team2 + "scored: " + arithmeticMeanTeam2 + " DEAD HEAT ");
 
-        {
+        //        "Перемогла команда" + teamName + "набрала" + result + "очків"
 
-        }
+
 
 
 
